@@ -2,20 +2,31 @@
 //  ContentView.swift
 //  KaspiApp
 //
-//  Created by Batyr Tolkynbayev on 16.01.2024.
+//  Created by Batyr Tolkynbayev on 15.01.2024.
 //
 
 import SwiftUI
 
+enum Tab: String, CaseIterable {
+    case main = "house"
+    case qr = "qrcode"
+    case messages = "message.badge"
+    case services = "list.bullet"
+}
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 0) {
+            NavBar(selectedTab: .constant(.services))
+            LogoView()
+            NameTextField(placeholder: "Имя: ")
+                .padding(.top)
+            NameTextField(placeholder: "Фамилия: ")
+                .padding(.top)
+            Spacer()
+            TabBar(selectedTab: .constant(.services))
         }
-        .padding()
+        .background(Color(.backgroundGray))
     }
 }
 
