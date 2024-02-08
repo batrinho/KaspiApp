@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		893DCDA42B726F5F0073133F /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893DCDA32B726F5F0073133F /* NetworkingService.swift */; };
+		893DCDA62B726F950073133F /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893DCDA52B726F950073133F /* ImageData.swift */; };
+		897476372B6E9AEA0037B36D /* ImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897476362B6E9AEA0037B36D /* ImageCollectionView.swift */; };
 		898DA9602B56A8E4006A844B /* KaspiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DA95F2B56A8E4006A844B /* KaspiAppApp.swift */; };
 		898DA9622B56A8E4006A844B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DA9612B56A8E4006A844B /* ContentView.swift */; };
 		898DA9642B56A8E6006A844B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898DA9632B56A8E6006A844B /* Assets.xcassets */; };
@@ -15,9 +18,13 @@
 		898DA9702B56A960006A844B /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DA96F2B56A960006A844B /* LogoView.swift */; };
 		898DA9722B56A968006A844B /* NameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DA9712B56A968006A844B /* NameTextField.swift */; };
 		898DA9742B56A96C006A844B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DA9732B56A96C006A844B /* TabBar.swift */; };
+		89EEF4622B73572600C833D6 /* ImageCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EEF4612B73572600C833D6 /* ImageCollectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		893DCDA32B726F5F0073133F /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		893DCDA52B726F950073133F /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		897476362B6E9AEA0037B36D /* ImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionView.swift; sourceTree = "<group>"; };
 		898DA95C2B56A8E4006A844B /* KaspiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaspiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		898DA95F2B56A8E4006A844B /* KaspiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaspiAppApp.swift; sourceTree = "<group>"; };
 		898DA9612B56A8E4006A844B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +34,7 @@
 		898DA96F2B56A960006A844B /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		898DA9712B56A968006A844B /* NameTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTextField.swift; sourceTree = "<group>"; };
 		898DA9732B56A96C006A844B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		89EEF4612B73572600C833D6 /* ImageCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		893DCDA72B726FA90073133F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				893DCDA82B726FBE0073133F /* Model */,
+				893DCDA32B726F5F0073133F /* NetworkingService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		893DCDA82B726FBE0073133F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				893DCDA52B726F950073133F /* ImageData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		893DCDA92B726FCE0073133F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				898DA9612B56A8E4006A844B /* ContentView.swift */,
+				898DA96F2B56A960006A844B /* LogoView.swift */,
+				898DA96D2B56A959006A844B /* NavBar.swift */,
+				898DA9712B56A968006A844B /* NameTextField.swift */,
+				898DA9732B56A96C006A844B /* TabBar.swift */,
+				89EEF4602B73571000C833D6 /* ImageCollectionView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		898DA9532B56A8E4006A844B = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				898DA95F2B56A8E4006A844B /* KaspiAppApp.swift */,
-				898DA9612B56A8E4006A844B /* ContentView.swift */,
-				898DA96D2B56A959006A844B /* NavBar.swift */,
-				898DA96F2B56A960006A844B /* LogoView.swift */,
-				898DA9712B56A968006A844B /* NameTextField.swift */,
-				898DA9732B56A96C006A844B /* TabBar.swift */,
+				893DCDA92B726FCE0073133F /* Views */,
+				893DCDA72B726FA90073133F /* Networking */,
 				898DA9632B56A8E6006A844B /* Assets.xcassets */,
 				898DA9652B56A8E6006A844B /* Preview Content */,
 			);
@@ -77,6 +112,15 @@
 				898DA9662B56A8E6006A844B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89EEF4602B73571000C833D6 /* ImageCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				897476362B6E9AEA0037B36D /* ImageCollectionView.swift */,
+				89EEF4612B73572600C833D6 /* ImageCollectionViewModel.swift */,
+			);
+			path = ImageCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +195,11 @@
 			files = (
 				898DA9622B56A8E4006A844B /* ContentView.swift in Sources */,
 				898DA9702B56A960006A844B /* LogoView.swift in Sources */,
+				89EEF4622B73572600C833D6 /* ImageCollectionViewModel.swift in Sources */,
+				897476372B6E9AEA0037B36D /* ImageCollectionView.swift in Sources */,
+				893DCDA42B726F5F0073133F /* NetworkingService.swift in Sources */,
 				898DA9602B56A8E4006A844B /* KaspiAppApp.swift in Sources */,
+				893DCDA62B726F950073133F /* ImageData.swift in Sources */,
 				898DA9742B56A96C006A844B /* TabBar.swift in Sources */,
 				898DA9722B56A968006A844B /* NameTextField.swift in Sources */,
 				898DA96E2B56A959006A844B /* NavBar.swift in Sources */,

@@ -7,24 +7,17 @@
 
 import SwiftUI
 
-enum Tab: String, CaseIterable {
-    case main = "house"
-    case qr = "qrcode"
-    case messages = "message.badge"
-    case services = "list.bullet"
-}
-
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 0) {
             NavBar(selectedTab: .constant(.services))
-            LogoView()
+            LogoView(selectedImage: )
             NameTextField(placeholder: "Имя: ")
                 .padding(.top)
             NameTextField(placeholder: "Фамилия: ")
                 .padding(.top)
             Spacer()
-            TabBar(selectedTab: .constant(.services))
+            TabBar(selectedTab: .services)
         }
         .background(Color(.backgroundGray))
     }
