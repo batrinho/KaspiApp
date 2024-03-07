@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct LogoView: View {
-    @State private var isImageCollectionPresented = false
-    @State var selectedImage: Image
-    
+    @EnvironmentObject private var coordinator: Coordinator
+    @Binding var selectedImage: Image
+
     var body: some View {
         ZStack {
             Color("LogoViewColor")
@@ -28,12 +28,9 @@ struct LogoView: View {
                     .font(.system(size: 21))
             }
             .onTapGesture {
-                isImageCollectionPresented.toggle()
+                Coordinator
             }
         }
         .frame(height: 164)
-        .sheet(isPresented: $isImageCollectionPresented, content: {
-            ImageCollectionView(selectedImage: $selectedImage)
-        })
     }
 }

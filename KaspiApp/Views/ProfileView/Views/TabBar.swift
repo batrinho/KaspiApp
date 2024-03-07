@@ -8,32 +8,27 @@
 import SwiftUI
 
 struct TabBar: View {
-    @Binding var selectedTab: Tab
+    @EnvironmentObject private var viewModel: ProfileViewModel
+
     var names: [String : String] = [
         "house" : "Главная",
-        "qrcode" : "Kaspi QR",
-        "message.badge" : "Сообщения",
-        "list.bullet" : "Сервисы"
+        "tengesign.arrow.circlepath" : "Переводы",
+        "list.bullet" : "Профиль"
     ]
     var body: some View {
         HStack {
             ForEach(Tab.allCases, id: \.rawValue) { tab in
-                Spacer()
                 VStack {
                     Image(systemName: tab.rawValue)
                         .frame(height: 17.5)
                     Text(names[tab.rawValue]!)
                         .font(.system(size: 10))
                 }
-                .foregroundStyle((selectedTab == tab ? .red : .gray))
+                .foregroundStyle((viewModel.currentState == tab ? .red : .gray))
                 Spacer()
             }
         }
         .padding()
         .background(Color(.white))
     }
-}
-
-#Preview {
-    TabBar(selectedTab: .constant(.services))
 }

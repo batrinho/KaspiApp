@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct NavBar: View {
-    @Binding var selectedTab: Tab
     var body: some View {
         ZStack {
             HStack {
@@ -31,8 +30,4 @@ struct NavBar: View {
         .padding(.bottom)
         .background(Color(.white))
     }
-}
-
-#Preview {
-    NavBar(selectedTab: .constant(.services))
 }

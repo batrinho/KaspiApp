@@ -14,7 +14,6 @@ final class ImageCollectionViewModel: ObservableObject {
     
     init(networkingService: NetworkingServiceProtocol) {
         self.networkingService = networkingService
-        self.loadImages()
     }
     
     func loadImages() {

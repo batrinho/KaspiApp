@@ -6,12 +6,26 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct KaspiAppApp: App {
+    @StateObject var coordinator = Coordinator()
+    let container: ModelContainer
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PrimaryView()
+                .environmentObject(coordinator)
+        }
+        .modelContainer(container)
+    }
+    
+    init() {
+        do {
+            container = try ModelContainer(for: ProfileData.self)
+        } catch {
+            fatalError("Failed to create ModelContainer for Movie.")
         }
     }
 }
