@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		898DA9602B56A8E4006A844B /* KaspiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DA95F2B56A8E4006A844B /* KaspiAppApp.swift */; };
-		898DA9622B56A8E4006A844B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DA9612B56A8E4006A844B /* ContentView.swift */; };
+		8905E7812B84C11500B0016E /* PrimaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905E7802B84C11500B0016E /* PrimaryView.swift */; };
+		8905E7852B84CF6F00B0016E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905E7842B84CF6F00B0016E /* ProfileViewModel.swift */; };
+		893DCDA42B726F5F0073133F /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893DCDA32B726F5F0073133F /* NetworkingService.swift */; };
+		893DCDA62B726F950073133F /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893DCDA52B726F950073133F /* ImageData.swift */; };
+		895CC9512B835B80001BC6D9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895CC9502B835B80001BC6D9 /* MainView.swift */; };
+		897476372B6E9AEA0037B36D /* ImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897476362B6E9AEA0037B36D /* ImageCollectionView.swift */; };
+		898DA9622B56A8E4006A844B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DA9612B56A8E4006A844B /* ProfileView.swift */; };
 		898DA9642B56A8E6006A844B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898DA9632B56A8E6006A844B /* Assets.xcassets */; };
 		898DA9672B56A8E6006A844B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898DA9662B56A8E6006A844B /* Preview Assets.xcassets */; };
+		89A3CD972B83294E0000DAAA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A3CD962B83294E0000DAAA /* Coordinator.swift */; };
+		89A3CD9C2B8335C90000DAAA /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A3CD9B2B8335C90000DAAA /* TransactionsView.swift */; };
+		89A8C9972B974DCE00C0EF89 /* KaspiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DA95F2B56A8E4006A844B /* KaspiAppApp.swift */; };
+		89D3ADFE2B863542008F31F9 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D3ADFD2B863542008F31F9 /* ProfileData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8905E7802B84C11500B0016E /* PrimaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryView.swift; sourceTree = "<group>"; };
+		8905E7842B84CF6F00B0016E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		893DCDA32B726F5F0073133F /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		893DCDA52B726F950073133F /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		895CC9502B835B80001BC6D9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		897476362B6E9AEA0037B36D /* ImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionView.swift; sourceTree = "<group>"; };
 		898DA95C2B56A8E4006A844B /* KaspiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaspiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		898DA95F2B56A8E4006A844B /* KaspiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaspiAppApp.swift; sourceTree = "<group>"; };
-		898DA9612B56A8E4006A844B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		898DA9612B56A8E4006A844B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		898DA9632B56A8E6006A844B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		898DA9662B56A8E6006A844B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89A3CD962B83294E0000DAAA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		89A3CD9B2B8335C90000DAAA /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		89D3ADFD2B863542008F31F9 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +50,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		893DCDA72B726FA90073133F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				893DCDA82B726FBE0073133F /* Model */,
+				893DCDA32B726F5F0073133F /* NetworkingService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		893DCDA82B726FBE0073133F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				893DCDA52B726F950073133F /* ImageData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		893DCDA92B726FCE0073133F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				895CC94D2B835B61001BC6D9 /* MainView */,
+				89A3CD9D2B8335DA0000DAAA /* TransactionsView */,
+				89A3CD982B832A150000DAAA /* ProfileView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		895CC94D2B835B61001BC6D9 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				895CC9502B835B80001BC6D9 /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		898DA9532B56A8E4006A844B = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				898DA95F2B56A8E4006A844B /* KaspiAppApp.swift */,
-				898DA9612B56A8E4006A844B /* ContentView.swift */,
+				8905E7802B84C11500B0016E /* PrimaryView.swift */,
+				89A3CD962B83294E0000DAAA /* Coordinator.swift */,
+				893DCDA92B726FCE0073133F /* Views */,
+				893DCDA72B726FA90073133F /* Networking */,
+				89D3ADFC2B86352B008F31F9 /* SwiftData */,
 				898DA9632B56A8E6006A844B /* Assets.xcassets */,
 				898DA9652B56A8E6006A844B /* Preview Content */,
 			);
@@ -65,6 +122,32 @@
 				898DA9662B56A8E6006A844B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89A3CD982B832A150000DAAA /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				898DA9612B56A8E4006A844B /* ProfileView.swift */,
+				8905E7842B84CF6F00B0016E /* ProfileViewModel.swift */,
+				897476362B6E9AEA0037B36D /* ImageCollectionView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		89A3CD9D2B8335DA0000DAAA /* TransactionsView */ = {
+			isa = PBXGroup;
+			children = (
+				89A3CD9B2B8335C90000DAAA /* TransactionsView.swift */,
+			);
+			path = TransactionsView;
+			sourceTree = "<group>";
+		};
+		89D3ADFC2B86352B008F31F9 /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				89D3ADFD2B863542008F31F9 /* ProfileData.swift */,
+			);
+			path = SwiftData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				898DA9622B56A8E4006A844B /* ContentView.swift in Sources */,
-				898DA9602B56A8E4006A844B /* KaspiAppApp.swift in Sources */,
+				898DA9622B56A8E4006A844B /* ProfileView.swift in Sources */,
+				895CC9512B835B80001BC6D9 /* MainView.swift in Sources */,
+				897476372B6E9AEA0037B36D /* ImageCollectionView.swift in Sources */,
+				893DCDA42B726F5F0073133F /* NetworkingService.swift in Sources */,
+				89A8C9972B974DCE00C0EF89 /* KaspiAppApp.swift in Sources */,
+				89A3CD9C2B8335C90000DAAA /* TransactionsView.swift in Sources */,
+				89A3CD972B83294E0000DAAA /* Coordinator.swift in Sources */,
+				893DCDA62B726F950073133F /* ImageData.swift in Sources */,
+				8905E7812B84C11500B0016E /* PrimaryView.swift in Sources */,
+				8905E7852B84CF6F00B0016E /* ProfileViewModel.swift in Sources */,
+				89D3ADFE2B863542008F31F9 /* ProfileData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
